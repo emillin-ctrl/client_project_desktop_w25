@@ -5,109 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Counseling and Psychological Services (CAPS) Resource Website</title>
+    <script src="js/script.js" defer></script>
+    <title>Student Success Portal</title>
 </head>
 <body>
     <div class="skip"><a href="#main" tabindex="0">Skip to Main Content</a></div>
-    <header>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo" class ="logo">
-        <nav>
-            <ul>
-                <li ><a href = "index.html">Home</a></li>
-                <li><a href = "msiadvising.html">MSI Academic Advising</a></li>
-                <li><a class="active" href ="caps.html">Counseling and Psychological Services (CAPS)</a></li>
-                <li><a href ="basicneeds.html">Student Life: Basic Needs</a></li>
-            </ul>
-        </nav>
-        <h1>Counseling and Psychological Services (CAPS) Resource Website</h1>
-    </header>
-
-    <main id="main">
-        <img src="images/therapy_dog.png" alt="Students pet a therapy dog in Shapiro Undergraduate Library." class ="responsive">
-        <section class="blue-box">
-            <h2 class="h2-white">What is CAPS?</h2>
-            <p>CAPS is a mental health service at the University of Michigan dedicated to supporting students' emotional and psychological well-being. It offers a variety of clinical services, including: Group Work Sessions, Workshops, and Crisis support.</p>
-        </section>
-        <details>
-            <summary>On this page</summary>
-            <div class ="jump-links">
-                <a href ="#group-work-sessions">Group Work Sessions</a>
-                <a href ="#workshops">Workshops</a>
-                <a href ="#crisis-resources">Crisis Resources</a>
-            </div>
-        </details>
-        <div class = "container">
-
-            <!--SECTION: GROUP SESSIONS-->
-            <section id = "group-work-sessions" class ="group-work-sessions-text">
-                <!-- Article: Group Work Sessions- Start-->
-                <h3>Group Work Sessions</h3>
-                <p>Counseling and Psychological Services (CAPS) at the University of Michigan offers peer-to-peer and group therapy sessions as a core part of its mental health support services.</p>
-                <!--Article: Group Work Sessions- Group Therapy-->
-                <articl class ="blue-box">
-                    <p><strong>Group Therapy Sessions</strong></p>
-                    <p>CAPS provides various group sessions each semester, which may include:</p>
-                    <ol>
-                        <li><strong>Interpersonal Therapy Groups</strong>: Focused on improving relationships and communication in a supportive setting.</li>
-                        <li><strong>Coping Skills Groups</strong>: Designed to teach strategies like mindfulness, emotion regulation, and stress management.</li>
-                        <li><strong>Identity-Based Groups</strong>: Examples include groups for sexual orientation and gender identity (SOGI), addressing topics like identity exploration, family dynamics, and intersectionality.</li>
-                        <li><strong>Support Groups</strong>: Peer-led or facilitated groups such as those through the Wolverine Support Network, which focus on creating safe spaces for sharing struggles.</li>
-                    </ol>
-                </article>
-            </section>
-            <section class ="group-work-sessions-graphic">
-                <figure>
-                    <img src = "images/togetherall.png" alt = "" class="responsive">
-                    <figcaption>Togetherall is a free, anonymous, online peer-support platform for University of Michigan students.</figcaption>
-                </figure>
-            </section>
-            <section class ="togetherall-text">
-                <!--Article: Group Work Sessions- Featured Resource-->
-                <article class ="blue-box">
-                    <p><strong>Featured Resource: Togetherall</strong></p>
-                    <p>Recognizing that some students who are feeling isolated, depressed, or anxious may find it challenging to connect with our resources and verbally express their needs, Togetherall is an all online peer-supported tool available free for students.</p><br>
-                    <p><strong>Three steps to get started with Togetherall:</strong></p>
-                    <ol>
-                        <li>Enter your U-M email address on the registration webpage</li>
-                        <li>Complete the short online form to create an account</li>
-                        <li>Verify your email address - be on the lookout for an email from Togetherall containing a verification link!</li>
-                    </ol>
-                </article>
-                <a class="button" href="https://togetherall.com/en-us/">Learn more about Togetherall</a>
+    <header class="header">
+        <div class="header-content">
+            <!--
+            NAVIGATION MENU IMPLEMENTATION
+            This HTML structure is based on the YouTube tutorial:
+            "JavaScript - How to Create a Responsive Hamburger Menu with HTML, CSS, & JavaScript"
+            by Web Dev Tutorials - https://www.youtube.com/watch?v=flItyHiDm7E
+            Accessed: April 2025
+            Adapted for use in SI539 W25 Final Clinet Project
+            -->
+            <nav class="navbar">
+                <img src="images/UMSI_signature_informal_maize-white.png" alt="UMSI Logo" class="logo">
+                <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="msiadvising.html" class="nav-link">MSI Advising</a></li>
+                <li class="nav-item"><a href="caps.html" class="active nav-link">Counseling (CAPS)</a></li>
+                <li class="nav-item"><a href="basicneeds.html" class="nav-link">Basic Needs</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+      </header>
+    <div class="page-wrapper">
+        <main id="main">
+            <h1>Counseling and Psychological Services (CAPS)</h1>
+            <section class="blue-box">
+                <h2 class="h2-white">What is CAPS?</h2>
+                <p>CAPS is a mental health service at the University of Michigan dedicated to supporting students' emotional and psychological well-being. It offers a variety of clinical services, including: Group Work Sessions, Workshops, and Crisis support.</p>
             </section>
 
-            <!--SECTION: WORKSHOPS-->
-            <section id ="workshops">
-                <!-- Article: Workshops- Start-->
-                <h3>Workshops</h3>
-                <p>CAPS offers workshops on various topics aimed at enhancing coping skills, mindfulness, and overall mental health. These are often one-time sessions designed for skill-building or education.</p>
-                <!--Article: Workshops- Featured Resource-->
-                <article>
-                    <h4>Featured Resource: Groups, Lunch Series, & Workshops</h4>
-                    <p>The Groups, Lunch Series, & Workshops page contains workshops and support groups dedicated to supporting student mental health</p>
-                    <a class="button" href="https://caps.umich.edu/content/groups-lunch-series-workshops">Explore workshops and support</a>
-                </article>
-            </section>
-
-            <!--SECTION: CRISIS RESOURCES-->
-            <section id ="crisis-resources">
-                <h3>Crisis Resources</h3>
-                <p>CAPS provides immediate support for students experiencing a mental health crisis. This includes in-person crisis counseling during business hours and after-hours urgent support via phone.</p>
-                <article class = "blue-box">
-                    <h4>Steps to Access Crisis Support:</h4>
-                    <ol>
-                        <li>During business hours: Visit CAPS in person or call their office for immediate assistance.</li>
-                        <li>After hours: Call the CAPS After Hours Urgent Support line (accessible through the main CAPS phone number).</li>
-                        <li>If needed, follow up with CAPS staff for ongoing care or referrals.</li>
-                    </ol>
-                </article>
-            </section>
-            <!-- Content taken & modified from PerplexityAI with the prompt, "You are a content designer. Read through https://caps.umich.edu/ and write up a breakdown that answers the following: What is Caps? What resources are available for Group work sessions, Workshops, and Crisis support (each should be its own section)? What are the steps a student can take to actionably use these resources? What is the benefit of Togetherall for Group Work Sessions, Let's Talk for getting started, Urgent Crisis Resources? Be sure to include context."
-            PerplexityAI (2025). PerplexityAI (January 26th version) [Large language model]. -->
+            <details>
+                <summary>On this page</summary>
+                <div class="jump-links">
+                    <a href="#group-therapy">How can Group Therapy help you?</a>
+                    <a href="#togetherall">Featured Resource: Togetherall</a>
+                    <a href="#crisis-resources">Crisis Resources</a>
+                </div>
+            </details>
+                <!-- Group Work Sessions -->
+                <div class="section-row">
+                    <section class="graphic">
+                        <img src="images/UMSI_group_workshop.JPG" alt="Students work in a auditorium style classroom in U-M north quad." class="responsive">
+                    </section>
+                    <section class="text" id="group-therapy">
+                        <article class="blue-box">
+                            <h3>How can Group Therapy help you?</h3>
+                            <ol>
+                                <li><strong>Interpersonal Therapy Groups:</strong> Improve relationships and communication in a supportive setting.</li>
+                                <li><strong>Coping Skills Groups:</strong> Learn mindfulness, emotion regulation, and stress management.</li>
+                                <li><strong>Identity-Based Groups:</strong> Examples include SOGI-focused groups for identity exploration and support.</li>
+                                <li><strong>Support Groups:</strong> Peer-led spaces like Wolverine Support Network for open sharing.</li>
+                            </ol>
+                            <a class="button" href="https://caps.umich.edu/content/groups-lunch-series-workshops">Explore workshops and support</a>
+                        </article>
+                    </section>
+                </div>
+                <!-- Togetherall Section -->
+                <div class="section-row">
+                    <section class="graphic">
+                        <img src="images/togetherall.png" alt="Togetherall anonymous online support" class="responsive">
+                    </section>
+                    <section class="text" id = "togetherall">
+                        <article class="blue-box">
+                            <h3>Featured Resource: Togetherall</h3>
+                            <p>Togetherall is an anonymous, online peer-support tool available for free to University of Michigan students, great for those feeling isolated or anxious.</p>
+                            <ol>
+                                <li>Go to the registration page and use your U-M email address</li>
+                                <li>Complete the short form</li>
+                                <li>Verify your account via email</li>
+                            </ol>
+                            <a class="button" href="https://togetherall.com/en-us/">Learn more about Togetherall</a>
+                        </article>
+                    </section>
+                </div>
+                <!-- Crisis Resources -->
+                <div class="section-row">
+                    <section class="graphic">
+                        <img src="images/therapy_dog.png" alt="Students pet a therapy dog in Shapiro Undergraduate Library." class="responsive">
+                    </section>
+                    <section class="text" id = "crisis-resources">
+                        <article class="blue-box">
+                            <h3>Crisis Support</h3>
+                            <p>CAPS provides immediate support for students experiencing a mental health crisis.</p>
+                            <ol>
+                                <li><strong>Business Hours:</strong> Visit CAPS in person or call their office.</li>
+                                <li><strong>After Hours:</strong> Use the CAPS Urgent Support Line via their main number.</li>
+                                <li><strong>Follow Up:</strong> Meet with a CAPS counselor or receive referrals for continued care.</li>
+                            </ol>
+                            <a class="button" href="https://caps.umich.edu/article/crisis-services-0">Learn more about crisis resources</a>
+                        </article>
+                    </section>
+                </div>
         </main>
-        <footer>
-            <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-            </footer>
     </div>
+    <footer>
+        <p> © Copyright <span id="year"></span> Regents of UMSI</p>
+        <p><br>
+            University of Michigan
+            105 S State St.
+            Ann Arbor, MI 48109-1285</p>
+    </footer>
 </body>
 </html>

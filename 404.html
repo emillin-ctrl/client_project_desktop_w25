@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Page Not Found | Student Success Portal</title>
+</head>
+<body>
+    <div class="skip"><a href="#main" tabindex="0">Skip to Main Content</a></div>
+    <header class="header">
+        <div class="header-content">
+            <!--
+            NAVIGATION MENU IMPLEMENTATION
+            This HTML structure is based on the YouTube tutorial:
+            "JavaScript - How to Create a Responsive Hamburger Menu with HTML, CSS, & JavaScript"
+            by Web Dev Tutorials - https://www.youtube.com/watch?v=flItyHiDm7E
+            Accessed: April 2025
+            Adapted for use in SI539 W25 Final Clinet Project
+            -->
+            <nav class="navbar">
+                <img src="images/UMSI_signature_informal_maize-white.png" alt="UMSI Logo" class="logo">
+                <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="msiadvising.html" class="nav-link">MSI Advising</a></li>
+                <li class="nav-item"><a href="caps.html" class="nav-link">Counseling (CAPS)</a></li>
+                <li class="nav-item"><a href="basicneeds.html" class="active nav-link">Basic Needs</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="page-wrapper">
+        <main class="error-container" role="main">
+        <h1 class="error-title">We couldn't find that page</h1>
+        <p class="error-message">
+            The link you followed may be broken or the page may have been removed.<br>
+            You're still in the right place — let's help you get back on track.
+        </p>
+        <a href="index.html" class="button">Return to Home</a>
+        <footer>
+            <p> © Copyright <span id="year"></span> Regents of UMSI</p>
+            <p><br>
+                University of Michigan
+                105 S State St.
+                Ann Arbor, MI 48109-1285</p>
+        </footer>
+        </main>
+    </div>
+</body>
+</html>
