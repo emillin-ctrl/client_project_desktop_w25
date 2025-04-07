@@ -119,7 +119,7 @@ body {
 
 footer {
   background: black;
-  -webkit-text-fill-color: #F0EAD0;
+  -webkit-text-fill-color: white;
   padding: 70px 0;
   grid-column: 1 / -1;
   text-align: center;
